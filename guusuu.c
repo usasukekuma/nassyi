@@ -1,13 +1,13 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 void main()
 {
 	int data_a, amari;
-	printf("®”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+	printf("æ•´æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„");
 	scanf_s("%d", &data_a);
 	amari = data_a % 2;
 	if (amari == 0)
-		printf("‹ô”‚Å‚·");
+		printf("å¶æ•°ã§ã™");
 	else
-		printf("Šï”‚Å‚·");
+		printf("å¥‡æ•°ã§ã™");
 }
 	
