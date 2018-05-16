@@ -8,7 +8,6 @@ void main()
 			goukei=shinchou+goukei;
 			++ninzuu;
 		}
-	average=goukei/shinchou;
+	average=goukei/ninzuu;
 	printf("平均は%dです。",average);
 }
-		
