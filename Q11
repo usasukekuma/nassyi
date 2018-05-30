@@ -1,0 +1,6 @@
+#include<stdio.h>
+void main()
+{
+	int lunch[10],
+	printf("ランチ代を入力してください:")
+	scanf("%d",&lunch[10]);
