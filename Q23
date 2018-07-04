@@ -1,0 +1,17 @@
+#include<stdio.h>
+struct animal
+{
+	char animal[3];
+	char name[11];
+	double kako;
+	double now;
+	double percent;
+};
+void main()
+{
+	struct animal cat={"猫","ミーちゃん",520,3250,0};
+	cat.percent=cat.now/cat.kako*100;
+	printf("種類　　名　前　　　誕生時の体重　　現在の体重　　増加率（％）\n");
+	printf("%4s　%10s　　%5.f　　　　　%6.f　　　　　%3.1f\n",cat.animal,cat.name,
+			cat.kako,cat.now,cat.percent);
+}
