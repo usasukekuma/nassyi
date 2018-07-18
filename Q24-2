@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+#include<process.h>
+void main()
+{
+	FILE *fp_input;
+	int y,kakudo;
+	double ysin,ycos;
+	
+	printf("\n角度を入力してください。（１５度単位）：");
+	scanf("%d",&kakudo);
+	
+	if((fp_input=fopen("data01.dat","r"))==NULL){
+		printf("NOT OPEN FILE");
+		exit(1);
+	}
+	while(fscanf(fp_input,"%d %lf %lf",&y,&ysin,&ycos)!=EOF){
+		if(y==kakudo)
+    		printf("　%3d　　%.4lf　　%.4lf\n",y,ysin,ycos);
+	}
+	fclose(fp_input);
+}
+	
+	
